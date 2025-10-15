@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Clone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Header -->
+  <header class="bg-white shadow flex items-center justify-between px-4 py-2 sticky top-0 z-50">
+    <div class="flex items-center space-x-4">
+      <button class="text-2xl font-bold">☰</button>
+      <h1 class="text-xl font-bold text-red-600">YouTube</h1>
+    </div>
+    <div class="flex items-center space-x-2">
+      <input type="text" placeholder="Search" class="px-2 py-1 border rounded w-64 focus:outline-none focus:ring-2 focus:ring-red-500">
+      <button class="bg-red-600 text-white px-4 py-1 rounded">Search</button>
+    </div>
+    <!-- Right -->
+    <div class="flex items-center space-x-4">
+      <!-- Upload Icon -->
+      <button class="text-gray-700 hover:bg-gray-200 p-2 rounded-full"><i class="fas fa-video"></i></button>
+      <!-- Apps Icon -->
+      <button>🔔</button>
+      <!-- User Avatar -->
+      <div class="w-8 h-8 rounded-full overflow-hidden cursor-pointer">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User Avatar" class="w-full h-full object-cover">
+      </div>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <div class="flex">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white h-screen p-4 hidden md:block">
+      <ul class="space-y-2">
+        <li class="p-2 hover:bg-gray-200 rounded cursor-pointer">Home</li>
+        <li class="p-2 hover:bg-gray-200 rounded cursor-pointer">Trending</li>
+        <li class="p-2 hover:bg-gray-200 rounded cursor-pointer">Subscriptions</li>
+        <li class="p-2 hover:bg-gray-200 rounded cursor-pointer">Library</li>
+        <li class="p-2 hover:bg-gray-200 rounded cursor-pointer">History</li>
+      </ul>
+    </aside>
+
+    <!-- Video grid -->
+    <main class="flex-1 p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      
+      <!-- Video Card 1 -->
+      <div class="bg-white rounded shadow overflow-hidden cursor-pointer">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Video 1" class="w-full h-48 object-cover">
+          <div class="p-2">
+            <h2 class="font-semibold text-sm">Never Gonna Give You Up</h2>
+            <p class="text-xs text-gray-600">Rick Astley • 1B views</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Video Card 2 -->
+      <div class="bg-white rounded shadow overflow-hidden cursor-pointer">
+        <a href="https://www.youtube.com/watch?v=9bZkp7q19f0" target="_blank">
+          <img src="https://img.youtube.com/vi/9bZkp7q19f0/0.jpg" alt="Video 2" class="w-full h-48 object-cover">
+          <div class="p-2">
+            <h2 class="font-semibold text-sm">Gangnam Style</h2>
+            <p class="text-xs text-gray-600">PSY • 4B views</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Video Card 3 -->
+      <div class="bg-white rounded shadow overflow-hidden cursor-pointer">
+        <a href="https://www.youtube.com/watch?v=kJQP7kiw5Fk" target="_blank">
+          <img src="https://img.youtube.com/vi/kJQP7kiw5Fk/0.jpg" alt="Video 3" class="w-full h-48 object-cover">
+          <div class="p-2">
+            <h2 class="font-semibold text-sm">Despacito</h2>
+            <p class="text-xs text-gray-600">Luis Fonsi • 7B views</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Video Card 4 -->
+      <div class="bg-white rounded shadow overflow-hidden cursor-pointer">
+        <a href="https://www.youtube.com/watch?v=3tmd-ClpJxA" target="_blank">
+          <img src="https://img.youtube.com/vi/3tmd-ClpJxA/0.jpg" alt="Video 4" class="w-full h-48 object-cover">
+          <div class="p-2">
+            <h2 class="font-semibold text-sm">See You Again</h2>
+            <p class="text-xs text-gray-600">Wiz Khalifa • 5B views</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Video Card 5 -->
+      <div class="bg-white rounded shadow overflow-hidden cursor-pointer">
+        <a href="https://www.youtube.com/watch?v=fRh_vgS2dFE" target="_blank">
+          <img src="https://img.youtube.com/vi/fRh_vgS2dFE/0.jpg" alt="Video 5" class="w-full h-48 object-cover">
+          <div class="p-2">
+            <h2 class="font-semibold text-sm">Sorry</h2>
+            <p class="text-xs text-gray-600">Justin Bieber • 3B views</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Video Card 6 -->
+      <div class="bg-white rounded shadow overflow-hidden cursor-pointer">
+        <a href="https://www.youtube.com/watch?v=CevxZvSJLk8" target="_blank">
+          <img src="https://img.youtube.com/vi/CevxZvSJLk8/0.jpg" alt="Video 6" class="w-full h-48 object-cover">
+          <div class="p-2">
+            <h2 class="font-semibold text-sm">Roar</h2>
+            <p class="text-xs text-gray-600">Katy Perry • 3B views</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Video Card 7 -->
+      <div class="bg-white rounded shadow overflow-hidden cursor-pointer">
+        <a href="https://www.youtube.com/watch?v=OPf0YbXqDm0" target="_blank">
+          <img src="https://img.youtube.com/vi/OPf0YbXqDm0/0.jpg" alt="Video 7" class="w-full h-48 object-cover">
+          <div class="p-2">
+            <h2 class="font-semibold text-sm">Uptown Funk</h2>
+            <p class="text-xs text-gray-600">Mark Ronson • 4B views</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Video Card 8 -->
+      <div class="bg-white rounded shadow overflow-hidden cursor-pointer">
+        <a href="https://www.youtube.com/watch?v=JGwWNGJdvx8" target="_blank">
+          <img src="https://img.youtube.com/vi/JGwWNGJdvx8/0.jpg" alt="Video 8" class="w-full h-48 object-cover">
+          <div class="p-2">
+            <h2 class="font-semibold text-sm">Shape of You</h2>
+            <p class="text-xs text-gray-600">Ed Sheeran • 6B views</p>
+          </div>
+        </a>
+      </div>
+
+    </main>
+  </div>
+
+</body>
+</html>
